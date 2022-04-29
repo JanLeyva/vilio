@@ -32,11 +32,11 @@ if [[ ${use_fuse} == "true" ]]; then
 fi
 
 
-TASK_GROUP_JSON=./conf/$TASK_NAME/task_${TASK_NAME}.json
+TASK_GROUP_JSON=/content/vilio/ernie-vil/conf/$TASK_NAME/task_${TASK_NAME}.json
 
 gpu_cnt=`echo $CUDA_VISIBLE_DEVICES | awk -F"\t" '{len=split($0,vec,",");print len}'`
 echo "gpu_cnt", $gpu_cnt
-python finetune.py --use_cuda "True"                                           \
+python /content/vilio/ernie-vil/finetune.py --use_cuda "True"                                           \
                 --is_distributed "False"                                       \
                 --use_fast_executor ${e_executor-"True"}                       \
                 --nccl_comm_num ${nccl_comm_num:-"1"}                          \

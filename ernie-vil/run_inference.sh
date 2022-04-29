@@ -31,7 +31,7 @@ if [[ ${use_fuse} == "true" ]]; then
     export FLAGS_fuse_parameter_groups_size=10
 fi
 
-TASK_GROUP_JSON=./conf/$TASK_NAME/task_${TASK_NAME}.json 
+TASK_GROUP_JSON=/content/vilio/ernie-vil/conf/$TASK_NAME/task_${TASK_NAME}.json 
 #_${SUB_TASK_NAME}.json
 
 python finetune.py --use_cuda "True"                                           \

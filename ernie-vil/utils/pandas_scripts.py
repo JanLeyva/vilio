@@ -59,7 +59,7 @@ def crude_hash(img_path):
 # The HM Dataset is very noisy:
 #  In the first version of the dataset there were many duplicates with conflicting labels
 #  In the second version, the conflicting labels have all been resolved, yet the duplicates remain
-def clean_data(data_path="./data"):
+def clean_data(data_path="/content/vilio/ernie-vil/data"):
     """
     Cleans the HM train & dev data.
     Outputs traindev & pretrain data.
@@ -145,7 +145,7 @@ def clean_data(data_path="./data"):
     traincleandev.to_json(path_or_buf=os.path.join(data_path, "traindev.jsonl"), orient='records', lines=True)
 
 
-def double_data(data_path="./data"):
+def double_data(data_path="/content/vilio/ernie-vil/data"):
     """
     Takes the data and pastes it on to the end. This ensures the data is formatted correctly for E-Models.
     It also creates a dummy column "label" which is just set to 0. 

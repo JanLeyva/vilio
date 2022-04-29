@@ -9,7 +9,7 @@ import os
 ## NOTE: We can use 10100 TSV here, as feats are later padded
 
 class ImageFeaturesH5Reader(object):
-    def __init__(self, features_path, jsonl_path="./data/hm/pretrain.jsonl"):
+    def __init__(self, features_path, jsonl_path="/content/vilio/ernie-vil/data/hm/pretrain.jsonl"):
         """
         features_path: Path with tsv & jsonl's
         """
