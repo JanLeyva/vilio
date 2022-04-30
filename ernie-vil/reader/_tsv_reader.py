@@ -24,10 +24,19 @@ class ImageFeaturesH5Reader(object):
         #            [json.loads(jline) for jline in open(path, "r").read().split('\n')]
         #    )
 
+        #entries = []
+        #entries.extend(
+        #    [json.loads(jline) for jline in open(jsonl_path, "r").read().split('\n')]
+        #    )
+
+        # modification to read the file
         entries = []
-        entries.extend(
-            [json.loads(jline) for jline in open(jsonl_path, "r").read().split('\n')]
-            )
+
+        json_open = open(jsonl_path, "r").read().split('\n')
+        for i in range(len(json_open)-1):
+            jline = json_open[i]
+            entries.append(json.loads(jline))
+
 
         id2datum = {datum["id"]: datum for datum in entries}
 
