@@ -37,7 +37,7 @@ parser.add_argument('--weight', default='vg', type=str,
 
 parser.add_argument('--minboxes', default=50, type=int, help='minboxes')
 parser.add_argument('--maxboxes', default=50, type=int, help='maxboxes')
-parser.add_argument('--dataroot', default='./data/', type=str, help="Path to data root; expects an img folder in the root")
+parser.add_argument('--dataroot', default='/content/vilio/data/', type=str, help="Path to data root; expects an img folder in the root")
 
 args = parser.parse_args()
 

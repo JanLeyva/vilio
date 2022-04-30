@@ -2,7 +2,7 @@
 
 ### ATT 36
 
-# mv /data/hm/hm_vgattr10100.tsv /content/vilio/ernie-vil/data/hm/HM_gt_img.tsv
+mv /content/vilio/ernie-vil/data/hm/hm_vgattr10100.tsv /content/vilio/ernie-vil/data/hm/HM_gt_img.tsv
 mv /content/vilio/ernie-vil/data/hm/hm_vgattr3636.tsv /content/vilio/ernie-vil/data/hm/HM_img.tsv
 
 bash /content/vilio/ernie-vil/run_finetuning.sh hm conf/hm/model_conf_hm \
