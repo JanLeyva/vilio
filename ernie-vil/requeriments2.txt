@@ -1,0 +1,6 @@
+json_lines
+paddlepaddle-gpu==2.2.2 -i https://mirror.baidu.com/pypi/simple
+imagehash
+numpy==1.14.3
+paddlepaddle-gpu==1.8.3.post97
+pandas==1.0.5
