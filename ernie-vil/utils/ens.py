@@ -12,7 +12,7 @@ import argparse
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--enspath", type=str, default="/content/vilio/ernie-vil/data", help="Path to folder with all csvs")
+    parser.add_argument("--enspath", type=str, default="/content/vilio/ernie-vil/data/hm", help="Path to folder with all csv's")
     parser.add_argument("--enstype", type=str, default="loop", help="Type of ensembling to be performed - Current options: loop / sa")
     parser.add_argument("--exp", type=str, default="experiment", help="Name of experiment for csv's")
     
@@ -56,7 +56,7 @@ def simple_average(targets, example, weights=None, power=1, normalize=False):
 ### APPLYING THE HELPER FUNCTIONS ###
 
 
-def sa_wrapper(data_path="/content/vilio/ernie-vil/data"):
+def sa_wrapper(data_path="/content/vilio/ernie-vil/data/hm"):
     """
     Applies simple average.
 
