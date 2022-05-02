@@ -117,12 +117,19 @@ def _load_annotationsQA_R(annotations_jsonpath, split):
 
 def _load_annotationsHM(annotations_jsonlpath, split):
 
+    #entries = []
+
+    #entries.extend(
+    #    [json.loads(jline) for jline in open(annotations_jsonlpath, "r").read().split('\n')]
+    #    )
+
+
     entries = []
 
-    entries.extend(
-        [json.loads(jline) for jline in open(annotations_jsonlpath, "r").read().split('\n')]
-        )
-
+    json_open = open(annotations_jsonlpath, "r").read().split('\n')
+    for i in range(len(json_open)-1):
+        jline = json_open[i]
+        entries.append(json.loads(jline))
     print("Load %d data from split(s) %s." % (len(entries), annotations_jsonlpath))
 
     return entries

@@ -325,7 +325,7 @@ def main(args):
     ernie_config.print_config()
 
     with open(args.task_group_json) as f:
-        task_group = json.load(f.decode("utf-8")) # we add decode("utf-8") in order to pass as string
+        task_group = json.load(f) # we add decode("utf-8") in order to pass as string
         print('task: ', task_group)
 
     startup_prog = fluid.Program()
