@@ -9,7 +9,7 @@
     "annotations_jsonpath_test_seen": "/content/vilio/ernie-vil/data/hm/test_seenlong.jsonl",
     "feature_lmdb_path": "/content/vilio/ernie-vil/data/hm/HM_img.tsv",
     "gt_feature_lmdb_path": "/content/vilio/ernie-vil/data/hm/HM_gt_img.tsv",
-    "unisex_names_table" : ".content/vilio/ernie-vil/data/vcr/unisex_names_table.csv",
+    "unisex_names_table" : "/content/vilio/ernie-vil/data/vcr/unisex_names_table.csv",
     "Proprocessor": "PreprocessorBasic",
     "tokenizer_name" : "FullTokenizer",
     "fusion_method" : "mul",
